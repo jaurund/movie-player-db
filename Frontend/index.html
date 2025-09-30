@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="src/icons/Play.svg">
+    <title>Multistreaming</title>
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <div id="my-sidepanel" class="sidepanel">
+        <a href="#" class="close-sidepanel" onclick="closeSidepanel()"><img src="src/icons/closebtn.svg"></a>
+        <div class="icon-container">
+            <a href="#"><img src="src/icons/Vector.png" class="icons"></a>
+            <a href="#"><img src="src/icons/youtube.svg" class="icons"></a>
+            <a href="#"><img src="src/icons/twitch.svg" class="icons"></a>
+            <a href="#"><img src="src/icons/videos.svg" class="icons"></a>
+            <a href="#"><img src="src/icons/library.svg" class="icons"></a>
+            <a href="#" id="footer-icon"><img src="src/icons/logout.svg" class="icons"></a>
+        </div>
+
+    </div>
+
+    <section id="main-section">
+        <button class="open-sidepanel" id="open-sidepanel-btn"><img src="src/icons/menu_1.svg"
+                onclick="openSidepanel()"></button>
+
+        <h1 id="get-content">
+            Content streaming right now:
+            <p id="count-content"></p>
+        </h1>
+
+        <section class="media-content" id="media-content">
+            <video id="video-player" controls>
+            </video>
+            <h1 id="video-title">
+
+            </h1>
+            <p id="video-description">
+
+            </p>
+        </section>
+
+        <img src="src/icons/like.svg" id="like-button" />
+    </section>
+</body>
+
+</html>
