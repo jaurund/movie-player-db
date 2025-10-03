@@ -1,14 +1,13 @@
-
 using Microsoft.EntityFrameworkCore;
+using Backend.Model;
 
-public class AppDbContext : DbContext
+namespace Backend.Context
 {
-    public DbSet<Videos> videos { get; set; }
-
-    public DbSet<Users> users { get; set; }
-
-    public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+    public class AppDbContext : DbContext
     {
+        public DbSet<Videos> Videos { get; set; }
+        public DbSet<Users> Users { get; set; }
 
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
     }
 }
